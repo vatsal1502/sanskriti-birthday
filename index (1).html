@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Happy Birthday, Sanskriti</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Parisienne&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#47333c;--rose:#b56b83;--cream:#fff8f2}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;color:var(--ink);font-family:'DM Sans',sans-serif;background:
+ radial-gradient(ellipse at 14% 16%,rgba(255,231,218,.9),transparent 38%),
+ radial-gradient(ellipse at 88% 80%,rgba(201,166,190,.55),transparent 42%),
+ linear-gradient(135deg,#f7e7e3,#e9d8e5 48%,#f8efe4);display:grid;place-items:center;padding:26px;overflow-x:hidden}
+body:before,body:after{content:"";position:fixed;width:360px;height:360px;border-radius:50%;filter:blur(2px);pointer-events:none;opacity:.22;background:radial-gradient(circle,#fff 0 2px,transparent 3px),radial-gradient(circle at 30% 35%,#fff 0 3px,transparent 4px);background-size:46px 46px,71px 71px}
+body:before{top:-90px;left:-90px}body:after{bottom:-100px;right:-70px}
+.wrap{width:min(780px,100%);display:grid;grid-template-columns:1fr;gap:22px;align-items:stretch}
+.editor{background:rgba(255,250,247,.78);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.8);border-radius:22px;padding:26px;box-shadow:0 18px 55px rgba(94,56,79,.10)}
+.editor h2{font:500 25px 'Playfair Display',serif;margin:0 0 7px}.editor p{font-size:13px;color:#8b6d7d;margin:0 0 22px;line-height:1.6}
+label{display:block;font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:#8b6d7d;margin:15px 0 7px}
+input,textarea{width:100%;border:1px solid #e7d5dc;border-radius:11px;background:#fffaf9;padding:12px 13px;font:14px 'DM Sans',sans-serif;color:var(--ink);outline:none;transition:.2s}
+input:focus,textarea:focus{border-color:#bd8298;box-shadow:0 0 0 3px #bd82981c}textarea{min-height:130px;resize:vertical;line-height:1.55}
+.hint{font-size:11px;color:#a88c9a;margin-top:7px}
+.card{position:relative;min-height:510px;border-radius:26px;overflow:hidden;display:flex;align-items:center;justify-content:center;padding:40px;background:
+ linear-gradient(140deg,rgba(71,39,58,.42),rgba(80,49,77,.12)),
+ radial-gradient(ellipse at 15% 20%,#e9bdc9 0%,transparent 40%),
+ radial-gradient(ellipse at 86% 78%,#c3a1bd 0%,transparent 48%),
+ linear-gradient(135deg,#d7b4bd,#f0d9d6 50%,#b99eb8);box-shadow:0 22px 65px rgba(91,56,82,.22)}
+.card:before{content:"";position:absolute;inset:12px;border:1px solid rgba(255,255,255,.42);border-radius:18px}
+.card:after{content:"✦     ✧        ✦      ✧     ✦";position:absolute;top:29px;left:0;right:0;text-align:center;color:#fff8e9;opacity:.8;letter-spacing:.45em;font-size:14px}
+.card-content{position:relative;z-index:1;text-align:center;color:#fffaf5;max-width:590px;text-shadow:0 2px 15px rgba(58,31,49,.22)}
+.kicker{font-size:11px;letter-spacing:.27em;text-transform:uppercase;opacity:.9;margin-bottom:16px}
+.name{font:clamp(44px,7vw,76px) 'Parisienne',cursive;line-height:1.05;margin:4px 0 8px;overflow-wrap:anywhere}
+.age{font:italic 20px 'Playfair Display',serif;margin:0 0 21px;opacity:.94}
+.rule{width:60px;height:1px;background:#fff9ec;margin:0 auto 20px;opacity:.8}
+.message{font:italic 19px/1.7 'Playfair Display',serif;white-space:pre-wrap;overflow-wrap:anywhere}
+.signature{margin-top:29px;font:25px 'Parisienne',cursive;opacity:.95}
+@media(max-width:700px){.wrap{grid-template-columns:1fr}.card{min-height:460px;padding:28px}.name{font-size:58px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <main class="card" aria-label="Birthday greeting preview">
+    <div class="card-content">
+      <div class="kicker">A little celebration for you</div>
+      <div class="name" id="previewName">Sanskriti</div>
+      <div class="age" id="previewAge"></div>
+      <div class="rule"></div>
+      <div class="message" id="previewMsg">Wishing you a very happy birthday Sanskriti🥰🎉. May god bless you with a very bright future and career✨. I wish you become one of the finest journalist in India or whatever is written for you. You are one of the most generous and kind person I have ever known toh kabhi change mat hona future me. Always be clear with your goals and ambition. And ek cheez hai i really hope ki humari dosti lifelong chale khatam nah ho❤️❤️. At last mein bas itna kehna chahunga sorry(kabhi tujhe hurt kara hai toh) and lysm, enjoy your day to the fullest.</div>
+      <div class="signature">With love & warm wishes ✧</div>
+    </div>
+  </main>
+</div>
+
+</body>
+</html>
